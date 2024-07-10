@@ -1,3 +1,8 @@
+/* The `interface IStartup` in TypeScript is defining a blueprint for a startup object. It specifies
+that any object implementing this interface must have the following properties: `nome`, `focusSettore`
+`descrizione` and `prodottiEServizi`. Additionally, it requires a method `riceviIncentivo`
+that takes a parameter `incentivo` of type `IIncentivo` and returns void. This method represents the 
+incentive being recived by the startup. */
 interface IStartup {
   nome: string; //
   focusSettore: string;
@@ -7,6 +12,11 @@ interface IStartup {
   riceviIncentivo(incentivo: IIncentivo): void;
 }
 
+/* The `interface IIncentivo` is defining a blueprint for an incentive object in TypeScript. It specifies
+that any object implementing this interface must have the following properties: `id` (readonly),
+`descrizione`, `età`, and `criteriEleggibilità`. Additionally, it requires a method `assegnaAStartup`
+that takes a parameter `startup` of type `IStartup` and returns void. This method represents the 
+incentive being assigned to a startup. */
 interface IIncentivo{
   readonly id: number;
   descrizione: string;
@@ -16,6 +26,11 @@ interface IIncentivo{
   assegnaAStartup(startup: IStartup): void;
 }
 
+/* The `interface ICittadino` is defining a blueprint for a citizen object in TypeScript. It specifies
+that any object implementing this interface must have the following properties: `nome` (name),
+`cognome` (surname), `età` (age), and `interessiSportivi` (array of sports interests). Additionally,
+it requires a method `partecipaAttività` that takes a parameter `startup` of type `IStartup` and
+returns void. This method represents the citizen participating in activities related to a startup. */
 interface ICittadino{
   nome: string;
   cognome: string;
@@ -25,6 +40,8 @@ interface ICittadino{
   partecipaAttività(startup: IStartup): void;
 }
 
+/* The `Startup` class in TypeScript represents a startup entity with properties such as name, sector
+focus, description, and products/services, along with a method to receive incentives. */
 class Startup implements IStartup{
   constructor(
     public nome: string,
@@ -38,6 +55,8 @@ class Startup implements IStartup{
   }
 }
 
+/* The class `Incentivo` represents an incentive with properties such as id, description, value, and
+eligibility criteria, and it can be assigned to a startup. */
 class Incentivo implements IIncentivo{
   constructor(
     public readonly id: number, 
@@ -52,6 +71,8 @@ class Incentivo implements IIncentivo{
   }
 }
 
+/* The class Cittadino represents a citizen with a name, surname, age, and sports interests, capable of
+participating in activities offered by a startup. */
 class Cittadino implements ICittadino{
   constructor(
     public nome: string, 
