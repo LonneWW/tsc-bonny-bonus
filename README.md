@@ -22,9 +22,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/LonneWW/tsc-bonny-bonus">
-    <img src="/assets/img/logo.png" alt="Logo" width="60" height="60">
-  </a>
 
 <h3 align="center">Bonny's Help</h3>
 
@@ -42,8 +39,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#installation">installation</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#installation">Installation</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -74,23 +70,19 @@
 ## Installation
 
 1. Clone the repository to your computer:
-   git clone https://github.com/your-username/startup-management-ts.git
-
+```
+   git clone https://github.com/LonneWW/tsc-bonny-bonus.git
+```
 2. Navigate to the project directory:
-   cd startup-management-ts
-
+```
+   cd tsc-bonny-bonus
+```
 3. Install dependencies (if needed):
+```
    npm install
-
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
